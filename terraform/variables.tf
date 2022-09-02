@@ -5,13 +5,19 @@ locals {
 variable "project" {
   description = "Your GCP Project ID"
   type = string
-  default = "dtc-de-339112"  # new one
+  default = "gold-totem-359211"  # new one
 }
 
 variable "region" {
   description = "Region for GCP resources. Choose as per your location: https://cloud.google.com/about/locations/"
   type = string
   default = "europe-central2"
+}
+
+variable "zone" {
+  description = "Region for GCP resources. Choose as per your location: https://cloud.google.com/about/locations/"
+  type = string
+  default = "europe-central2-a"
 }
 
 # ? OS ? 
