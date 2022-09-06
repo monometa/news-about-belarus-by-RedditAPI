@@ -50,6 +50,9 @@ ENV AIRFLOW_HOME=/opt/airflow
 USER root
 RUN apt-get update -qq && apt-get install vim -qqq
 # git gcc g++ -qqq
+#for python libs, but that didn't work properly :(
+# ENV PATH="/root/.local/bin:${PATH}"
+ENV PATH="root/.local/bin/:${PATH}"
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt

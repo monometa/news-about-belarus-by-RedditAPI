@@ -1,7 +1,13 @@
 apache-airflow-providers-google
 <<<<<<< HEAD
+<<<<<<< HEAD
 pyarrow
 pandas
 =======
 pyarrow
 >>>>>>> 7dfd599 (fix: add airflow/logs to .gitignore and set up docker vars and files)
+=======
+pyarrow
+pandas
+praw
+>>>>>>> d8bb0cb (fix: test commit)

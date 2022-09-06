@@ -272,8 +272,16 @@ x-airflow-common:
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
     GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/google_credentials.json
     AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_credentials.json'
+    #init for GCP
     GCP_PROJECT_ID: ${GCP_PROJECT_ID}
     GCP_GCS_BUCKET: ${GCP_GCS_BUCKET}
+    #init for API
+    AIRFLOW_VAR_CLIENT_ID: ${AIRFLOW_VAR_CLIENT_ID}
+    AIRFLOW_VAR_SECRET_KEY: ${AIRFLOW_VAR_SECRET_KEY}
+    AIRFLOW_VAR_USER_NAME: ${AIRFLOW_VAR_USER_NAME}
+    AIRFLOW_VAR_USER_PASSWORD: ${AIRFLOW_VAR_USER_PASSWORD}
+    AIRFLOW_VAR_USER_AGENT: ${AIRFLOW_VAR_USER_AGENT}
+    
 
   volumes:
     - ./dags:/opt/airflow/dags

@@ -1,39 +1,3 @@
-import pandas as pd
-import praw
-from datetime import datetime
-from dotenv import load_dotenv
-import os
-from pathlib import Path
-
-
-load_dotenv()
-now = datetime.now()
-CURRENT_TIME = now.strftime("%H.%M")
-RAW_DATA_PATH = (Path(__file__).parent / '../../data/raw/').resolve()
-
-CLIENT_ID = os.environ["CLIENT_ID"]
-SECRET_KEY = os.environ["SECRET_KEY"]
-USER_NAME = os.environ["USER_NAME"]
-USER_PASSWORD = os.environ["USER_PASSWORD"]
-USER_AGENT = os.environ["USER_AGENT"]
-
-SUBREDDIT = 'belarus'
-TIME_FILTER = "day"
-LIMIT = 5
-
-POST_FIELDS = (
-    "id",
-    "title",
-    "score",
-    "num_comments",
-    "author",
-    "created_utc",  # time when the message was created / Unix Time
-    "url",
-    "upvote_ratio",
-    "spoiler",
-)
-
-
 def api_connect():
     """Connect to Reddit API"""
     try:
