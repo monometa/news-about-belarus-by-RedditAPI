@@ -1,3 +1,4 @@
+# import praw
 def api_connect():
     """Connect to Reddit API"""
     try:
