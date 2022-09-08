@@ -1,17 +1,4 @@
 apache-airflow-providers-google
-<<<<<<< HEAD
-<<<<<<< HEAD
-pyarrow
-praw
-pandas
-<<<<<<< HEAD
-=======
-pyarrow
->>>>>>> 7dfd599 (fix: add airflow/logs to .gitignore and set up docker vars and files)
-=======
 pyarrow
 pandas
 praw
->>>>>>> d8bb0cb (fix: test commit)
-=======
->>>>>>> ee67156 (fix: styles fixes in Dockerfile and req.txt)
